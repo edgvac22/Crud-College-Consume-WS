@@ -1,0 +1,695 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Proyecto3_Consumir_WS
+</name>
+</assembly>
+<members>
+<member name="T:Proyecto3_Consumir_WS.My.MyWebExtension">
+ <summary>
+ Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Proyecto3_Consumir_WS.My.MyWebExtension.Computer">
+ <summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member>
+<member name="P:Proyecto3_Consumir_WS.My.MyWebExtension.User">
+ <summary>
+ Devuelve información del usuario web actual.
+ </summary>
+</member>
+<member name="P:Proyecto3_Consumir_WS.My.MyWebExtension.Request">
+ <summary>
+ Devuelve un objeto Request.
+ </summary>
+</member>
+<member name="P:Proyecto3_Consumir_WS.My.MyWebExtension.Response">
+ <summary>
+ Devuelve un objeto Response.
+ </summary>
+</member>
+<member name="P:Proyecto3_Consumir_WS.My.MyWebExtension.Log">
+ <summary>
+ Devuelve el objeto de registro Asp.
+ </summary>
+</member>
+<member name="T:Proyecto3_Consumir_WS.ServiceReference1.Estudiante_Reg">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Estudiante_Reg.radio">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Estudiante_Reg.cedula">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Estudiante_Reg.nombre">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Estudiante_Reg.apellido">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Estudiante_Reg.direccion">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Estudiante_Reg.celular">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Estudiante_Reg.correo">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Estudiante_Reg.facultad">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Estudiante_Reg.carrera">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Estudiante_Reg.indice">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Estudiante_Reg.sexo">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Estudiante_Reg.status">
+<remarks/>
+</member>
+<member name="T:Proyecto3_Consumir_WS.ServiceReference1.Profesor_Reg">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Profesor_Reg.radio">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Profesor_Reg.codigo">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Profesor_Reg.cedula">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Profesor_Reg.nombre">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Profesor_Reg.apellido">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Profesor_Reg.direccion">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Profesor_Reg.celular">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Profesor_Reg.correo">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Profesor_Reg.facultad">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Profesor_Reg.categoria">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Profesor_Reg.salario">
+<remarks/>
+</member>
+<member name="P:Proyecto3_Consumir_WS.ServiceReference1.Profesor_Reg.status">
+<remarks/>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._Label1">
+<summary>
+Control Label1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._txt_Cedula">
+<summary>
+Control txt_Cedula.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._Label2">
+<summary>
+Control Label2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._txt_Nombre">
+<summary>
+Control txt_Nombre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._Label3">
+<summary>
+Control Label3.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._txt_Apellido">
+<summary>
+Control txt_Apellido.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._Label4">
+<summary>
+Control Label4.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._txt_Direccion">
+<summary>
+Control txt_Direccion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._Label5">
+<summary>
+Control Label5.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._txt_Celular">
+<summary>
+Control txt_Celular.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._Label6">
+<summary>
+Control Label6.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._txt_Correo">
+<summary>
+Control txt_Correo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._Label7">
+<summary>
+Control Label7.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._ddl_Facultad">
+<summary>
+Control ddl_Facultad.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._Label8">
+<summary>
+Control Label8.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._ddl_Carrera">
+<summary>
+Control ddl_Carrera.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._Label9">
+<summary>
+Control Label9.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._txt_Indice">
+<summary>
+Control txt_Indice.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._Label10">
+<summary>
+Control Label10.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._txt_Sexo">
+<summary>
+Control txt_Sexo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._Label11">
+<summary>
+Control Label11.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._txt_Estatus">
+<summary>
+Control txt_Estatus.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._btn_Buscar">
+<summary>
+Control btn_Buscar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._btn_Limpiar">
+<summary>
+Control btn_Limpiar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._btn_Listar">
+<summary>
+Control btn_Listar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._btn_Agregar">
+<summary>
+Control btn_Agregar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._btn_Modificar">
+<summary>
+Control btn_Modificar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._btn_Eliminar">
+<summary>
+Control btn_Eliminar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._Label1">
+<summary>
+Control Label1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._txt_Codigo">
+<summary>
+Control txt_Codigo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._Label12">
+<summary>
+Control Label12.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._txt_Cedula">
+<summary>
+Control txt_Cedula.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._Label2">
+<summary>
+Control Label2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._txt_Nombre">
+<summary>
+Control txt_Nombre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._Label3">
+<summary>
+Control Label3.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._txt_Apellido">
+<summary>
+Control txt_Apellido.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._Label4">
+<summary>
+Control Label4.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._txt_Direccion">
+<summary>
+Control txt_Direccion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._Label5">
+<summary>
+Control Label5.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._txt_Celular">
+<summary>
+Control txt_Celular.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._Label6">
+<summary>
+Control Label6.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._txt_Correo">
+<summary>
+Control txt_Correo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._Label7">
+<summary>
+Control Label7.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._ddl_Facultad">
+<summary>
+Control ddl_Facultad.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._Label8">
+<summary>
+Control Label8.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._ddl_Categoria">
+<summary>
+Control ddl_Categoria.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._Label9">
+<summary>
+Control Label9.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._txt_Salario">
+<summary>
+Control txt_Salario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._Label11">
+<summary>
+Control Label11.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._txt_Estatus">
+<summary>
+Control txt_Estatus.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._btn_Buscar">
+<summary>
+Control btn_Buscar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._btn_Limpiar">
+<summary>
+Control btn_Limpiar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._btn_Listar">
+<summary>
+Control btn_Listar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._btn_Agregar">
+<summary>
+Control btn_Agregar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._btn_Modificar">
+<summary>
+Control btn_Modificar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Profesor._btn_Eliminar">
+<summary>
+Control btn_Eliminar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.SiteMaster._navbarDropdownMenuLink">
+<summary>
+Control navbarDropdownMenuLink.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.SiteMaster._MainContent">
+<summary>
+Control MainContent.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Site_Mobile._Head1">
+<summary>
+Control Head1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Site_Mobile._HeadContent">
+<summary>
+Control HeadContent.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Site_Mobile._form1">
+<summary>
+control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Site_Mobile._FeaturedContent">
+<summary>
+Control FeaturedContent.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Site_Mobile._MainContent">
+<summary>
+Control MainContent.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto3_Consumir_WS.Site_Mobile._ViewSwitcher1">
+<summary>
+Control ViewSwitcher1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+</members>
+</doc>

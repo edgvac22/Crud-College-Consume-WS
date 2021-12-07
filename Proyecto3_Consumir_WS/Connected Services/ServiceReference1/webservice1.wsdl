@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Buscar_Estudiante_Reg">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ced" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Buscar_Estudiante_RegResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Buscar_Estudiante_RegResult" type="tns:Estudiante_Reg" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Estudiante_Reg">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="radio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cedula" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="apellido" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="direccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="celular" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="facultad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="carrera" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="indice" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="sexo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Buscar_Profesor_Reg">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cod" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Buscar_Profesor_RegResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Buscar_Profesor_RegResult" type="tns:Profesor_Reg" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Profesor_Reg">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="radio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="codigo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cedula" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="apellido" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="direccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="celular" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="facultad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="categoria" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="salario" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Buscar_Facultad">
+        <s:complexType />
+      </s:element>
+      <s:element name="Buscar_FacultadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Buscar_FacultadResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Buscar_Categoria">
+        <s:complexType />
+      </s:element>
+      <s:element name="Buscar_CategoriaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Buscar_CategoriaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Listar_Profesor">
+        <s:complexType />
+      </s:element>
+      <s:element name="Listar_ProfesorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Listar_ProfesorResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Listar_Estudiante">
+        <s:complexType />
+      </s:element>
+      <s:element name="Listar_EstudianteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Listar_EstudianteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Agregar_Profesor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="v_codigo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_cedula" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_apellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_direccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_celular" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_correo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_facultad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_categoria" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="v_salario" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Agregar_ProfesorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Agregar_ProfesorResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Actualizar_Profesor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="v_nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_apellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_direccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_celular" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_correo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_facultad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_categoria" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="v_salario" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Actualizar_ProfesorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Actualizar_ProfesorResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Buscar_Estudiante_RegSoapIn">
+    <wsdl:part name="parameters" element="tns:Buscar_Estudiante_Reg" />
+  </wsdl:message>
+  <wsdl:message name="Buscar_Estudiante_RegSoapOut">
+    <wsdl:part name="parameters" element="tns:Buscar_Estudiante_RegResponse" />
+  </wsdl:message>
+  <wsdl:message name="Buscar_Profesor_RegSoapIn">
+    <wsdl:part name="parameters" element="tns:Buscar_Profesor_Reg" />
+  </wsdl:message>
+  <wsdl:message name="Buscar_Profesor_RegSoapOut">
+    <wsdl:part name="parameters" element="tns:Buscar_Profesor_RegResponse" />
+  </wsdl:message>
+  <wsdl:message name="Buscar_FacultadSoapIn">
+    <wsdl:part name="parameters" element="tns:Buscar_Facultad" />
+  </wsdl:message>
+  <wsdl:message name="Buscar_FacultadSoapOut">
+    <wsdl:part name="parameters" element="tns:Buscar_FacultadResponse" />
+  </wsdl:message>
+  <wsdl:message name="Buscar_CategoriaSoapIn">
+    <wsdl:part name="parameters" element="tns:Buscar_Categoria" />
+  </wsdl:message>
+  <wsdl:message name="Buscar_CategoriaSoapOut">
+    <wsdl:part name="parameters" element="tns:Buscar_CategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Listar_ProfesorSoapIn">
+    <wsdl:part name="parameters" element="tns:Listar_Profesor" />
+  </wsdl:message>
+  <wsdl:message name="Listar_ProfesorSoapOut">
+    <wsdl:part name="parameters" element="tns:Listar_ProfesorResponse" />
+  </wsdl:message>
+  <wsdl:message name="Listar_EstudianteSoapIn">
+    <wsdl:part name="parameters" element="tns:Listar_Estudiante" />
+  </wsdl:message>
+  <wsdl:message name="Listar_EstudianteSoapOut">
+    <wsdl:part name="parameters" element="tns:Listar_EstudianteResponse" />
+  </wsdl:message>
+  <wsdl:message name="Agregar_ProfesorSoapIn">
+    <wsdl:part name="parameters" element="tns:Agregar_Profesor" />
+  </wsdl:message>
+  <wsdl:message name="Agregar_ProfesorSoapOut">
+    <wsdl:part name="parameters" element="tns:Agregar_ProfesorResponse" />
+  </wsdl:message>
+  <wsdl:message name="Actualizar_ProfesorSoapIn">
+    <wsdl:part name="parameters" element="tns:Actualizar_Profesor" />
+  </wsdl:message>
+  <wsdl:message name="Actualizar_ProfesorSoapOut">
+    <wsdl:part name="parameters" element="tns:Actualizar_ProfesorResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebService1Soap">
+    <wsdl:operation name="Buscar_Estudiante_Reg">
+      <wsdl:input message="tns:Buscar_Estudiante_RegSoapIn" />
+      <wsdl:output message="tns:Buscar_Estudiante_RegSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Buscar_Profesor_Reg">
+      <wsdl:input message="tns:Buscar_Profesor_RegSoapIn" />
+      <wsdl:output message="tns:Buscar_Profesor_RegSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Buscar_Facultad">
+      <wsdl:input message="tns:Buscar_FacultadSoapIn" />
+      <wsdl:output message="tns:Buscar_FacultadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Buscar_Categoria">
+      <wsdl:input message="tns:Buscar_CategoriaSoapIn" />
+      <wsdl:output message="tns:Buscar_CategoriaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Listar_Profesor">
+      <wsdl:input message="tns:Listar_ProfesorSoapIn" />
+      <wsdl:output message="tns:Listar_ProfesorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Listar_Estudiante">
+      <wsdl:input message="tns:Listar_EstudianteSoapIn" />
+      <wsdl:output message="tns:Listar_EstudianteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Agregar_Profesor">
+      <wsdl:input message="tns:Agregar_ProfesorSoapIn" />
+      <wsdl:output message="tns:Agregar_ProfesorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_Profesor">
+      <wsdl:input message="tns:Actualizar_ProfesorSoapIn" />
+      <wsdl:output message="tns:Actualizar_ProfesorSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebService1Soap" type="tns:WebService1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Buscar_Estudiante_Reg">
+      <soap:operation soapAction="http://tempuri.org/Buscar_Estudiante_Reg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Buscar_Profesor_Reg">
+      <soap:operation soapAction="http://tempuri.org/Buscar_Profesor_Reg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Buscar_Facultad">
+      <soap:operation soapAction="http://tempuri.org/Buscar_Facultad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Buscar_Categoria">
+      <soap:operation soapAction="http://tempuri.org/Buscar_Categoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Listar_Profesor">
+      <soap:operation soapAction="http://tempuri.org/Listar_Profesor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Listar_Estudiante">
+      <soap:operation soapAction="http://tempuri.org/Listar_Estudiante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Agregar_Profesor">
+      <soap:operation soapAction="http://tempuri.org/Agregar_Profesor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_Profesor">
+      <soap:operation soapAction="http://tempuri.org/Actualizar_Profesor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService1Soap12" type="tns:WebService1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Buscar_Estudiante_Reg">
+      <soap12:operation soapAction="http://tempuri.org/Buscar_Estudiante_Reg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Buscar_Profesor_Reg">
+      <soap12:operation soapAction="http://tempuri.org/Buscar_Profesor_Reg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Buscar_Facultad">
+      <soap12:operation soapAction="http://tempuri.org/Buscar_Facultad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Buscar_Categoria">
+      <soap12:operation soapAction="http://tempuri.org/Buscar_Categoria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Listar_Profesor">
+      <soap12:operation soapAction="http://tempuri.org/Listar_Profesor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Listar_Estudiante">
+      <soap12:operation soapAction="http://tempuri.org/Listar_Estudiante" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Agregar_Profesor">
+      <soap12:operation soapAction="http://tempuri.org/Agregar_Profesor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_Profesor">
+      <soap12:operation soapAction="http://tempuri.org/Actualizar_Profesor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService1">
+    <wsdl:port name="WebService1Soap" binding="tns:WebService1Soap">
+      <soap:address location="http://localhost:8080/webservice1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebService1Soap12" binding="tns:WebService1Soap12">
+      <soap12:address location="http://localhost:8080/webservice1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
