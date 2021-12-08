@@ -47,6 +47,13 @@ Namespace ServiceReference1
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/Buscar_Categoria", ReplyAction:="*")>  _
         Function Buscar_CategoriaAsync() As System.Threading.Tasks.Task(Of System.Data.DataTable)
         
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/Buscar_Carrera", ReplyAction:="*"),  _
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+        Function Buscar_Carrera() As System.Data.DataTable
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/Buscar_Carrera", ReplyAction:="*")>  _
+        Function Buscar_CarreraAsync() As System.Threading.Tasks.Task(Of System.Data.DataTable)
+        
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/Listar_Profesor", ReplyAction:="*"),  _
          System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
         Function Listar_Profesor() As System.Data.DataSet
@@ -68,12 +75,40 @@ Namespace ServiceReference1
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/Agregar_Profesor", ReplyAction:="*")>  _
         Function Agregar_ProfesorAsync(ByVal v_codigo As String, ByVal v_cedula As String, ByVal v_nombre As String, ByVal v_apellido As String, ByVal v_direccion As String, ByVal v_celular As String, ByVal v_correo As String, ByVal v_facultad As String, ByVal v_categoria As String, ByVal v_salario As Decimal, ByVal v_status As String) As System.Threading.Tasks.Task(Of Boolean)
         
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/Agregar_Estudiante", ReplyAction:="*"),  _
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+        Function Agregar_Estudiante(ByVal v_cedula As String, ByVal v_nombre As String, ByVal v_apellido As String, ByVal v_direccion As String, ByVal v_celular As String, ByVal v_correo As String, ByVal v_facultad As String, ByVal v_carrera As String, ByVal v_indice As Decimal, ByVal v_sexo As String, ByVal v_status As String) As Boolean
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/Agregar_Estudiante", ReplyAction:="*")>  _
+        Function Agregar_EstudianteAsync(ByVal v_cedula As String, ByVal v_nombre As String, ByVal v_apellido As String, ByVal v_direccion As String, ByVal v_celular As String, ByVal v_correo As String, ByVal v_facultad As String, ByVal v_carrera As String, ByVal v_indice As Decimal, ByVal v_sexo As String, ByVal v_status As String) As System.Threading.Tasks.Task(Of Boolean)
+        
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/Actualizar_Profesor", ReplyAction:="*"),  _
          System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function Actualizar_Profesor(ByVal v_nombre As String, ByVal v_apellido As String, ByVal v_direccion As String, ByVal v_celular As String, ByVal v_correo As String, ByVal v_facultad As String, ByVal v_categoria As String, ByVal v_salario As Decimal, ByVal v_status As String) As Boolean
+        Function Actualizar_Profesor(ByVal v_codigo As String, ByVal v_cedula As String, ByVal v_nombre As String, ByVal v_apellido As String, ByVal v_direccion As String, ByVal v_celular As String, ByVal v_correo As String, ByVal v_facultad As String, ByVal v_categoria As String, ByVal v_salario As Decimal, ByVal v_status As String) As Boolean
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/Actualizar_Profesor", ReplyAction:="*")>  _
-        Function Actualizar_ProfesorAsync(ByVal v_nombre As String, ByVal v_apellido As String, ByVal v_direccion As String, ByVal v_celular As String, ByVal v_correo As String, ByVal v_facultad As String, ByVal v_categoria As String, ByVal v_salario As Decimal, ByVal v_status As String) As System.Threading.Tasks.Task(Of Boolean)
+        Function Actualizar_ProfesorAsync(ByVal v_codigo As String, ByVal v_cedula As String, ByVal v_nombre As String, ByVal v_apellido As String, ByVal v_direccion As String, ByVal v_celular As String, ByVal v_correo As String, ByVal v_facultad As String, ByVal v_categoria As String, ByVal v_salario As Decimal, ByVal v_status As String) As System.Threading.Tasks.Task(Of Boolean)
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/Actualizar_Estudiante", ReplyAction:="*"),  _
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+        Function Actualizar_Estudiante(ByVal v_cedula As String, ByVal v_nombre As String, ByVal v_apellido As String, ByVal v_direccion As String, ByVal v_celular As String, ByVal v_correo As String, ByVal v_facultad As String, ByVal v_carrera As String, ByVal v_indice As Decimal, ByVal v_sexo As String, ByVal v_status As String) As Boolean
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/Actualizar_Estudiante", ReplyAction:="*")>  _
+        Function Actualizar_EstudianteAsync(ByVal v_cedula As String, ByVal v_nombre As String, ByVal v_apellido As String, ByVal v_direccion As String, ByVal v_celular As String, ByVal v_correo As String, ByVal v_facultad As String, ByVal v_carrera As String, ByVal v_indice As Decimal, ByVal v_sexo As String, ByVal v_status As String) As System.Threading.Tasks.Task(Of Boolean)
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/Eliminar_Profesor", ReplyAction:="*"),  _
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+        Function Eliminar_Profesor(ByVal v_codigo As String) As Object
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/Eliminar_Profesor", ReplyAction:="*")>  _
+        Function Eliminar_ProfesorAsync(ByVal v_codigo As String) As System.Threading.Tasks.Task(Of Object)
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/Eliminar_Estudiante", ReplyAction:="*"),  _
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+        Function Eliminar_Estudiante(ByVal v_cedula As String) As Object
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/Eliminar_Estudiante", ReplyAction:="*")>  _
+        Function Eliminar_EstudianteAsync(ByVal v_cedula As String) As System.Threading.Tasks.Task(Of Object)
     End Interface
     
     '''<remarks/>
@@ -515,6 +550,14 @@ Namespace ServiceReference1
             Return MyBase.Channel.Buscar_CategoriaAsync
         End Function
         
+        Public Function Buscar_Carrera() As System.Data.DataTable Implements ServiceReference1.WebService1Soap.Buscar_Carrera
+            Return MyBase.Channel.Buscar_Carrera
+        End Function
+        
+        Public Function Buscar_CarreraAsync() As System.Threading.Tasks.Task(Of System.Data.DataTable) Implements ServiceReference1.WebService1Soap.Buscar_CarreraAsync
+            Return MyBase.Channel.Buscar_CarreraAsync
+        End Function
+        
         Public Function Listar_Profesor() As System.Data.DataSet Implements ServiceReference1.WebService1Soap.Listar_Profesor
             Return MyBase.Channel.Listar_Profesor
         End Function
@@ -539,12 +582,44 @@ Namespace ServiceReference1
             Return MyBase.Channel.Agregar_ProfesorAsync(v_codigo, v_cedula, v_nombre, v_apellido, v_direccion, v_celular, v_correo, v_facultad, v_categoria, v_salario, v_status)
         End Function
         
-        Public Function Actualizar_Profesor(ByVal v_nombre As String, ByVal v_apellido As String, ByVal v_direccion As String, ByVal v_celular As String, ByVal v_correo As String, ByVal v_facultad As String, ByVal v_categoria As String, ByVal v_salario As Decimal, ByVal v_status As String) As Boolean Implements ServiceReference1.WebService1Soap.Actualizar_Profesor
-            Return MyBase.Channel.Actualizar_Profesor(v_nombre, v_apellido, v_direccion, v_celular, v_correo, v_facultad, v_categoria, v_salario, v_status)
+        Public Function Agregar_Estudiante(ByVal v_cedula As String, ByVal v_nombre As String, ByVal v_apellido As String, ByVal v_direccion As String, ByVal v_celular As String, ByVal v_correo As String, ByVal v_facultad As String, ByVal v_carrera As String, ByVal v_indice As Decimal, ByVal v_sexo As String, ByVal v_status As String) As Boolean Implements ServiceReference1.WebService1Soap.Agregar_Estudiante
+            Return MyBase.Channel.Agregar_Estudiante(v_cedula, v_nombre, v_apellido, v_direccion, v_celular, v_correo, v_facultad, v_carrera, v_indice, v_sexo, v_status)
         End Function
         
-        Public Function Actualizar_ProfesorAsync(ByVal v_nombre As String, ByVal v_apellido As String, ByVal v_direccion As String, ByVal v_celular As String, ByVal v_correo As String, ByVal v_facultad As String, ByVal v_categoria As String, ByVal v_salario As Decimal, ByVal v_status As String) As System.Threading.Tasks.Task(Of Boolean) Implements ServiceReference1.WebService1Soap.Actualizar_ProfesorAsync
-            Return MyBase.Channel.Actualizar_ProfesorAsync(v_nombre, v_apellido, v_direccion, v_celular, v_correo, v_facultad, v_categoria, v_salario, v_status)
+        Public Function Agregar_EstudianteAsync(ByVal v_cedula As String, ByVal v_nombre As String, ByVal v_apellido As String, ByVal v_direccion As String, ByVal v_celular As String, ByVal v_correo As String, ByVal v_facultad As String, ByVal v_carrera As String, ByVal v_indice As Decimal, ByVal v_sexo As String, ByVal v_status As String) As System.Threading.Tasks.Task(Of Boolean) Implements ServiceReference1.WebService1Soap.Agregar_EstudianteAsync
+            Return MyBase.Channel.Agregar_EstudianteAsync(v_cedula, v_nombre, v_apellido, v_direccion, v_celular, v_correo, v_facultad, v_carrera, v_indice, v_sexo, v_status)
+        End Function
+        
+        Public Function Actualizar_Profesor(ByVal v_codigo As String, ByVal v_cedula As String, ByVal v_nombre As String, ByVal v_apellido As String, ByVal v_direccion As String, ByVal v_celular As String, ByVal v_correo As String, ByVal v_facultad As String, ByVal v_categoria As String, ByVal v_salario As Decimal, ByVal v_status As String) As Boolean Implements ServiceReference1.WebService1Soap.Actualizar_Profesor
+            Return MyBase.Channel.Actualizar_Profesor(v_codigo, v_cedula, v_nombre, v_apellido, v_direccion, v_celular, v_correo, v_facultad, v_categoria, v_salario, v_status)
+        End Function
+        
+        Public Function Actualizar_ProfesorAsync(ByVal v_codigo As String, ByVal v_cedula As String, ByVal v_nombre As String, ByVal v_apellido As String, ByVal v_direccion As String, ByVal v_celular As String, ByVal v_correo As String, ByVal v_facultad As String, ByVal v_categoria As String, ByVal v_salario As Decimal, ByVal v_status As String) As System.Threading.Tasks.Task(Of Boolean) Implements ServiceReference1.WebService1Soap.Actualizar_ProfesorAsync
+            Return MyBase.Channel.Actualizar_ProfesorAsync(v_codigo, v_cedula, v_nombre, v_apellido, v_direccion, v_celular, v_correo, v_facultad, v_categoria, v_salario, v_status)
+        End Function
+        
+        Public Function Actualizar_Estudiante(ByVal v_cedula As String, ByVal v_nombre As String, ByVal v_apellido As String, ByVal v_direccion As String, ByVal v_celular As String, ByVal v_correo As String, ByVal v_facultad As String, ByVal v_carrera As String, ByVal v_indice As Decimal, ByVal v_sexo As String, ByVal v_status As String) As Boolean Implements ServiceReference1.WebService1Soap.Actualizar_Estudiante
+            Return MyBase.Channel.Actualizar_Estudiante(v_cedula, v_nombre, v_apellido, v_direccion, v_celular, v_correo, v_facultad, v_carrera, v_indice, v_sexo, v_status)
+        End Function
+        
+        Public Function Actualizar_EstudianteAsync(ByVal v_cedula As String, ByVal v_nombre As String, ByVal v_apellido As String, ByVal v_direccion As String, ByVal v_celular As String, ByVal v_correo As String, ByVal v_facultad As String, ByVal v_carrera As String, ByVal v_indice As Decimal, ByVal v_sexo As String, ByVal v_status As String) As System.Threading.Tasks.Task(Of Boolean) Implements ServiceReference1.WebService1Soap.Actualizar_EstudianteAsync
+            Return MyBase.Channel.Actualizar_EstudianteAsync(v_cedula, v_nombre, v_apellido, v_direccion, v_celular, v_correo, v_facultad, v_carrera, v_indice, v_sexo, v_status)
+        End Function
+        
+        Public Function Eliminar_Profesor(ByVal v_codigo As String) As Object Implements ServiceReference1.WebService1Soap.Eliminar_Profesor
+            Return MyBase.Channel.Eliminar_Profesor(v_codigo)
+        End Function
+        
+        Public Function Eliminar_ProfesorAsync(ByVal v_codigo As String) As System.Threading.Tasks.Task(Of Object) Implements ServiceReference1.WebService1Soap.Eliminar_ProfesorAsync
+            Return MyBase.Channel.Eliminar_ProfesorAsync(v_codigo)
+        End Function
+        
+        Public Function Eliminar_Estudiante(ByVal v_cedula As String) As Object Implements ServiceReference1.WebService1Soap.Eliminar_Estudiante
+            Return MyBase.Channel.Eliminar_Estudiante(v_cedula)
+        End Function
+        
+        Public Function Eliminar_EstudianteAsync(ByVal v_cedula As String) As System.Threading.Tasks.Task(Of Object) Implements ServiceReference1.WebService1Soap.Eliminar_EstudianteAsync
+            Return MyBase.Channel.Eliminar_EstudianteAsync(v_cedula)
         End Function
     End Class
 End Namespace

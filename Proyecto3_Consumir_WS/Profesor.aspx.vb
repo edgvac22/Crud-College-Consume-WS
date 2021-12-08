@@ -140,19 +140,20 @@ Public Class Profesor
     Protected Sub btn_Modificar_Click(sender As Object, e As EventArgs) Handles btn_Modificar.Click
         If txt_Estatus.Text = "A" Then
 
-            If ws.Actualizar_Profesor(txt_Nombre.Text, txt_Apellido.Text,
+            If ws.Actualizar_Profesor(txt_Codigo.Text, txt_Cedula.Text, txt_Nombre.Text, txt_Apellido.Text,
                                txt_Direccion.Text, txt_Celular.Text, txt_Correo.Text, ddl_Facultad.SelectedValue,
                                ddl_Categoria.SelectedValue, txt_Salario.Text, txt_Estatus.Text) Then
-                MsgBox("Estudiante modificado. Estatus Activo")
+                Response.Write("<script>alert('Profesor modificado. Estatus Activo');</script>")
             Else
-                MsgBox("Error al modificar estudiante")
+                Response.Write("<script>alert('Error al modificar profesor');</script>")
             End If
         ElseIf txt_Estatus.Text = "I" Then
 
-            If ws.Actualizar_Profesor(txt_Nombre.Text, txt_Apellido.Text,
+            If ws.Actualizar_Profesor(txt_Codigo.Text, txt_Cedula.Text, txt_Nombre.Text, txt_Apellido.Text,
                                txt_Direccion.Text, txt_Celular.Text, txt_Correo.Text, ddl_Facultad.SelectedValue,
                                ddl_Categoria.SelectedValue, txt_Salario.Text, txt_Estatus.Text) Then
-                MsgBox("Estudiante modificado. Está inactivo.")
+                Response.Write("<script>alert('Profesor modificado. Está inactivo.');</script>")
+                txt_Codigo.Enabled = False
                 txt_Cedula.Enabled = False
                 txt_Nombre.Enabled = False
                 txt_Apellido.Enabled = False
@@ -163,10 +164,45 @@ Public Class Profesor
                 ddl_Categoria.Enabled = False
                 txt_Salario.Enabled = False
             Else
-                MsgBox("Error al modificar estudiante")
+                Response.Write("<script>alert('Error al modificar profesor');</script>")
             End If
         Else
-            MsgBox("Solo se permiten las letras A (usuario activo), I (usuario inactivo)")
+            Response.Write("<script>alert('Solo se permiten las letras A (usuario activo), I (usuario inactivo)');</script>")
         End If
     End Sub
+
+    Protected Sub btn_Eliminar_Click(sender As Object, e As EventArgs) Handles btn_Eliminar.Click
+        If ws.Eliminar_Profesor(txt_Codigo.Text) Then
+            Response.Write("<script>alert('Profesor eliminado');</script>")
+            txt_Codigo.Text = ""
+            txt_Cedula.Text = ""
+            txt_Nombre.Text = ""
+            txt_Apellido.Text = ""
+            txt_Direccion.Text = ""
+            txt_Celular.Text = ""
+            txt_Correo.Text = ""
+            ddl_Facultad.SelectedValue = "00"
+            ddl_Categoria.SelectedValue = "00"
+            txt_Salario.Text = ""
+            txt_Estatus.Text = ""
+            btn_Buscar.Enabled = True
+            btn_Agregar.Enabled = False
+            btn_Modificar.Enabled = False
+            btn_Eliminar.Enabled = False
+            txt_Codigo.Enabled = True
+            txt_Cedula.Enabled = False
+            txt_Nombre.Enabled = False
+            txt_Apellido.Enabled = False
+            txt_Direccion.Enabled = False
+            txt_Celular.Enabled = False
+            txt_Correo.Enabled = False
+            ddl_Facultad.Enabled = False
+            ddl_Categoria.Enabled = False
+            txt_Salario.Enabled = False
+            txt_Estatus.Enabled = False
+        Else
+            Response.Write("<script>alert('Error al eliminar al profesor');</script>")
+        End If
+    End Sub
+
 End Class

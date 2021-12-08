@@ -96,6 +96,23 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="Buscar_Carrera">
+        <s:complexType />
+      </s:element>
+      <s:element name="Buscar_CarreraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Buscar_CarreraResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="Listar_Profesor">
         <s:complexType />
       </s:element>
@@ -154,9 +171,35 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="Agregar_Estudiante">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="v_cedula" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_apellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_direccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_celular" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_correo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_facultad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_carrera" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="v_indice" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_sexo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Agregar_EstudianteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Agregar_EstudianteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="Actualizar_Profesor">
         <s:complexType>
           <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="v_codigo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_cedula" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="v_nombre" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="v_apellido" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="v_direccion" type="s:string" />
@@ -173,6 +216,58 @@
         <s:complexType>
           <s:sequence>
             <s:element minOccurs="1" maxOccurs="1" name="Actualizar_ProfesorResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Actualizar_Estudiante">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="v_cedula" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_apellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_direccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_celular" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_correo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_facultad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_carrera" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="v_indice" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_sexo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="v_status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Actualizar_EstudianteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Actualizar_EstudianteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Eliminar_Profesor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="v_codigo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Eliminar_ProfesorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Eliminar_ProfesorResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Eliminar_Estudiante">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="v_cedula" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Eliminar_EstudianteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Eliminar_EstudianteResult" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -202,6 +297,12 @@
   <wsdl:message name="Buscar_CategoriaSoapOut">
     <wsdl:part name="parameters" element="tns:Buscar_CategoriaResponse" />
   </wsdl:message>
+  <wsdl:message name="Buscar_CarreraSoapIn">
+    <wsdl:part name="parameters" element="tns:Buscar_Carrera" />
+  </wsdl:message>
+  <wsdl:message name="Buscar_CarreraSoapOut">
+    <wsdl:part name="parameters" element="tns:Buscar_CarreraResponse" />
+  </wsdl:message>
   <wsdl:message name="Listar_ProfesorSoapIn">
     <wsdl:part name="parameters" element="tns:Listar_Profesor" />
   </wsdl:message>
@@ -220,11 +321,35 @@
   <wsdl:message name="Agregar_ProfesorSoapOut">
     <wsdl:part name="parameters" element="tns:Agregar_ProfesorResponse" />
   </wsdl:message>
+  <wsdl:message name="Agregar_EstudianteSoapIn">
+    <wsdl:part name="parameters" element="tns:Agregar_Estudiante" />
+  </wsdl:message>
+  <wsdl:message name="Agregar_EstudianteSoapOut">
+    <wsdl:part name="parameters" element="tns:Agregar_EstudianteResponse" />
+  </wsdl:message>
   <wsdl:message name="Actualizar_ProfesorSoapIn">
     <wsdl:part name="parameters" element="tns:Actualizar_Profesor" />
   </wsdl:message>
   <wsdl:message name="Actualizar_ProfesorSoapOut">
     <wsdl:part name="parameters" element="tns:Actualizar_ProfesorResponse" />
+  </wsdl:message>
+  <wsdl:message name="Actualizar_EstudianteSoapIn">
+    <wsdl:part name="parameters" element="tns:Actualizar_Estudiante" />
+  </wsdl:message>
+  <wsdl:message name="Actualizar_EstudianteSoapOut">
+    <wsdl:part name="parameters" element="tns:Actualizar_EstudianteResponse" />
+  </wsdl:message>
+  <wsdl:message name="Eliminar_ProfesorSoapIn">
+    <wsdl:part name="parameters" element="tns:Eliminar_Profesor" />
+  </wsdl:message>
+  <wsdl:message name="Eliminar_ProfesorSoapOut">
+    <wsdl:part name="parameters" element="tns:Eliminar_ProfesorResponse" />
+  </wsdl:message>
+  <wsdl:message name="Eliminar_EstudianteSoapIn">
+    <wsdl:part name="parameters" element="tns:Eliminar_Estudiante" />
+  </wsdl:message>
+  <wsdl:message name="Eliminar_EstudianteSoapOut">
+    <wsdl:part name="parameters" element="tns:Eliminar_EstudianteResponse" />
   </wsdl:message>
   <wsdl:portType name="WebService1Soap">
     <wsdl:operation name="Buscar_Estudiante_Reg">
@@ -243,6 +368,10 @@
       <wsdl:input message="tns:Buscar_CategoriaSoapIn" />
       <wsdl:output message="tns:Buscar_CategoriaSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="Buscar_Carrera">
+      <wsdl:input message="tns:Buscar_CarreraSoapIn" />
+      <wsdl:output message="tns:Buscar_CarreraSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="Listar_Profesor">
       <wsdl:input message="tns:Listar_ProfesorSoapIn" />
       <wsdl:output message="tns:Listar_ProfesorSoapOut" />
@@ -255,9 +384,25 @@
       <wsdl:input message="tns:Agregar_ProfesorSoapIn" />
       <wsdl:output message="tns:Agregar_ProfesorSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="Agregar_Estudiante">
+      <wsdl:input message="tns:Agregar_EstudianteSoapIn" />
+      <wsdl:output message="tns:Agregar_EstudianteSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="Actualizar_Profesor">
       <wsdl:input message="tns:Actualizar_ProfesorSoapIn" />
       <wsdl:output message="tns:Actualizar_ProfesorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_Estudiante">
+      <wsdl:input message="tns:Actualizar_EstudianteSoapIn" />
+      <wsdl:output message="tns:Actualizar_EstudianteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar_Profesor">
+      <wsdl:input message="tns:Eliminar_ProfesorSoapIn" />
+      <wsdl:output message="tns:Eliminar_ProfesorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar_Estudiante">
+      <wsdl:input message="tns:Eliminar_EstudianteSoapIn" />
+      <wsdl:output message="tns:Eliminar_EstudianteSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="WebService1Soap" type="tns:WebService1Soap">
@@ -298,6 +443,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="Buscar_Carrera">
+      <soap:operation soapAction="http://tempuri.org/Buscar_Carrera" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="Listar_Profesor">
       <soap:operation soapAction="http://tempuri.org/Listar_Profesor" style="document" />
       <wsdl:input>
@@ -325,8 +479,44 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="Agregar_Estudiante">
+      <soap:operation soapAction="http://tempuri.org/Agregar_Estudiante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="Actualizar_Profesor">
       <soap:operation soapAction="http://tempuri.org/Actualizar_Profesor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_Estudiante">
+      <soap:operation soapAction="http://tempuri.org/Actualizar_Estudiante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar_Profesor">
+      <soap:operation soapAction="http://tempuri.org/Eliminar_Profesor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar_Estudiante">
+      <soap:operation soapAction="http://tempuri.org/Eliminar_Estudiante" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -373,6 +563,15 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="Buscar_Carrera">
+      <soap12:operation soapAction="http://tempuri.org/Buscar_Carrera" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="Listar_Profesor">
       <soap12:operation soapAction="http://tempuri.org/Listar_Profesor" style="document" />
       <wsdl:input>
@@ -400,8 +599,44 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="Agregar_Estudiante">
+      <soap12:operation soapAction="http://tempuri.org/Agregar_Estudiante" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="Actualizar_Profesor">
       <soap12:operation soapAction="http://tempuri.org/Actualizar_Profesor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_Estudiante">
+      <soap12:operation soapAction="http://tempuri.org/Actualizar_Estudiante" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar_Profesor">
+      <soap12:operation soapAction="http://tempuri.org/Eliminar_Profesor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar_Estudiante">
+      <soap12:operation soapAction="http://tempuri.org/Eliminar_Estudiante" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

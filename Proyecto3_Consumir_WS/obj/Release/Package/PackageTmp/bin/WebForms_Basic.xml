@@ -367,6 +367,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:Proyecto3_Consumir_WS.Estudiante._gv_Listar">
+<summary>
+Control gv_Listar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:Proyecto3_Consumir_WS.Profesor._Label1">
 <summary>
 Control Label1.
